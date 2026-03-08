@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/Sahanon-P/portfolio/compare/v1.1.0...v1.2.0) (2026-03-08)
+
+
+### Features
+
+* add vercel analytics ([586d955](https://github.com/Sahanon-P/portfolio/commit/586d9550c7785fe043cc4e91f3d33e3599fcab7c))
+* add vercel speed insight ([3ebd163](https://github.com/Sahanon-P/portfolio/commit/3ebd163d1c2bb2ff9f72183551f653eea5414aa0))
+
 # [1.1.0](https://github.com/Sahanon-P/portfolio/compare/v1.0.0...v1.1.0) (2026-03-08)
 
 
