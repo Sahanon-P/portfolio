@@ -1,36 +1,128 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Sahanon Phisetpaksit (Ping)
+
+Personal portfolio website for Sahanon Phisetpaksit, a full-stack software engineer based in Christchurch, New Zealand. Designed with a [Teenage Engineering K.O. II](https://teenage.engineering/products/ko2) sampler aesthetic — flat, monospace, hardware-like.
+
+## Tech Stack
+
+| Layer | Technology |
+|---|---|
+| Framework | Next.js 16 (App Router) |
+| Styling | Tailwind CSS v4 |
+| Components | shadcn/ui v3 |
+| Animations | Framer Motion |
+| CMS | Contentful |
+| Font | IBM Plex Mono |
+| Theme | next-themes (light/dark) |
+| Contact form | Web3Forms |
+| Package manager | Yarn Berry v4 |
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 18+
+- Yarn 4 (`corepack enable`)
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+yarn install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Create a `.env.local` file in the root:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+CONTENTFUL_SPACE_ID=your_space_id
+CONTENTFUL_ACCESS_TOKEN=your_access_token
+NEXT_PUBLIC_WEB3FORMS_KEY=your_web3forms_key
+```
 
-## Learn More
+- **Contentful**: Create a space and add content types for `experience`, `research`, and `project` (see [Content Model](#content-model))
+- **Web3Forms**: Get a free key at [web3forms.com](https://web3forms.com) — just enter your email
 
-To learn more about Next.js, take a look at the following resources:
+### Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Build
 
-## Deploy on Vercel
+```bash
+yarn build
+yarn start
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Content Model (Contentful)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### `experience`
+| Field | Type |
+|---|---|
+| `company` | Short text |
+| `role` | Short text |
+| `startDate` | Short text |
+| `endDate` | Short text |
+| `responsibilities` | Rich text |
+
+### `research`
+| Field | Type |
+|---|---|
+| `title` | Short text |
+| `institution` | Short text |
+| `year` | Short text |
+| `type` | Short text |
+| `keyFindings` | Rich text |
+| `pdfUrl` | Media (Asset) |
+
+### `project`
+| Field | Type |
+|---|---|
+| `title` | Short text |
+| `description` | Rich text |
+| `techStack` | Short text (comma-separated) |
+| `githubUrl` | Short text |
+| `liveUrl` | Short text |
+| `order` | Integer |
+
+## Project Structure
+
+```
+├── app/
+│   ├── globals.css        # Tailwind v4 design system + K.O. II palette
+│   ├── layout.tsx         # Root layout, fonts, ThemeProvider
+│   └── page.tsx           # Server component, fetches Contentful data
+├── components/
+│   ├── sections/          # Page sections (Hero, About, Skills, Experience, Research, Projects, Contact)
+│   ├── ui/                # shadcn/ui components
+│   └── rich-text-renderer.tsx  # Contentful rich text → styled React
+├── data/
+│   └── portfolio.ts       # Static data (skills, personal info)
+├── lib/
+│   ├── api.ts             # Contentful fetchers (server-side)
+│   ├── contentful.ts      # Contentful client
+│   └── contentful-types.ts # Typed Contentful skeletons
+└── public/                # Static assets (images, resume)
+```
+
+## Design System
+
+All colours and tokens are defined in `app/globals.css` under `@theme inline` and `:root` / `.dark`.
+
+| Token | Light | Dark |
+|---|---|---|
+| `--background` | `#F0EDE8` | `#1A1A1A` |
+| `--surface` | `#E8E4DE` | `#242424` |
+| `--accent-orange` | `#FF5500` | `#FF5500` |
+| `--foreground` | `#1A1A1A` | `#F0EDE8` |
+
+All border radii are set to `0` — sharp corners throughout.
+
+## Deployment
+
+The site is designed to deploy on [Vercel](https://vercel.com). Add the environment variables in the Vercel dashboard under **Settings → Environment Variables**.
+
+## License
+
+MIT
