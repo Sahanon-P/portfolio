@@ -1,3 +1,11 @@
+## [1.3.1](https://github.com/Sahanon-P/portfolio/compare/v1.3.0...v1.3.1) (2026-03-19)
+
+
+### Bug Fixes
+
+* change revalidation to 60 seconds ([e5fea84](https://github.com/Sahanon-P/portfolio/commit/e5fea84e8a401e02db496e7c5c73b399fe82a7d2))
+* set revalidate to every hour ([e546aa9](https://github.com/Sahanon-P/portfolio/commit/e546aa99b10ddd63083c53cb1f4368e2e8737dff))
+
 # [1.3.0](https://github.com/Sahanon-P/portfolio/compare/v1.2.0...v1.3.0) (2026-03-19)
 
 
