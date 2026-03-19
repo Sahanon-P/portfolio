@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/Sahanon-P/portfolio/compare/v1.2.0...v1.3.0) (2026-03-19)
+
+
+### Features
+
+* add new resume ([1a3764b](https://github.com/Sahanon-P/portfolio/commit/1a3764b30375bb919719f0e8b30b0008d202282b))
+
 # [1.2.0](https://github.com/Sahanon-P/portfolio/compare/v1.1.0...v1.2.0) (2026-03-08)
 
 
