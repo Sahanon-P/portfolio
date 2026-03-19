@@ -1,5 +1,4 @@
-"use server";
-export const revalidate = 3600; // revalidate every 1 hour
+export const revalidate = 60; // revalidate every 60 seconds
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/Hero";
