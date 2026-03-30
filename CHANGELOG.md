@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/Sahanon-P/portfolio/compare/v1.3.1...v1.3.2) (2026-03-30)
+
+
+### Bug Fixes
+
+* update resume and fix lib version ([0957aa4](https://github.com/Sahanon-P/portfolio/commit/0957aa49280c4e3a885eed56c85baaa9d78c94ae))
+
 ## [1.3.1](https://github.com/Sahanon-P/portfolio/compare/v1.3.0...v1.3.1) (2026-03-19)
 
 
