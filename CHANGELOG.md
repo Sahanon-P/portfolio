@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/Sahanon-P/portfolio/compare/v1.3.3...v1.3.4) (2026-06-02)
+
+
+### Bug Fixes
+
+* remove open to work ([70f9ac8](https://github.com/Sahanon-P/portfolio/commit/70f9ac8608cac5b2163486f08427ed08e5424607))
+
 ## [1.3.3](https://github.com/Sahanon-P/portfolio/compare/v1.3.2...v1.3.3) (2026-03-30)
 
 
