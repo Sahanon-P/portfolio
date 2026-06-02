@@ -201,7 +201,7 @@ export default function Contact() {
 
             <p className="label-tag mb-3">RESPONSE TIME</p>
             <p className="text-sm" style={{ color: "var(--text-secondary)" }}>
-              Typically within 24–48 hours. Open to full-time, contract, and remote roles.
+              Typically within 24–48 hours.
             </p>
           </motion.div>
         </div>
