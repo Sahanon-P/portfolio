@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/Sahanon-P/portfolio/compare/v1.3.4...v1.4.0) (2026-06-22)
+
+
+### Features
+
+* add more devops skill ([9532d3d](https://github.com/Sahanon-P/portfolio/commit/9532d3dbb97dc76ea9e7023bdea2df34247db90b))
+
 ## [1.3.4](https://github.com/Sahanon-P/portfolio/compare/v1.3.3...v1.3.4) (2026-06-02)
 
 
