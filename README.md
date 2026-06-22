@@ -1,6 +1,6 @@
 # Portfolio — Sahanon Phisetpaksit (Ping)
 
-Personal portfolio website for Sahanon Phisetpaksit, a full-stack software engineer based in Christchurch, New Zealand. Designed with a [Teenage Engineering K.O. II](https://teenage.engineering/products/ko2) sampler aesthetic — flat, monospace, hardware-like.
+Personal portfolio website for Sahanon Phisetpaksit, a full-stack software engineer based in Wellington, New Zealand. Designed with a [Teenage Engineering K.O. II](https://teenage.engineering/products/ko2) sampler aesthetic — flat, monospace, hardware-like.
 
 ## Tech Stack
 

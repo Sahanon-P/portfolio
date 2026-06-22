@@ -41,7 +41,7 @@ export const personal = {
   github: "Sahanon-P",
   githubUrl: "https://github.com/Sahanon-P",
   linkedIn: "https://linkedin.com/in/sahanon-p",
-  location: "Christchurch, New Zealand",
+  location: "Wellington, New Zealand",
   visa: "3-year Post-Study Work Visa (open work rights)",
   summary:
     "Software Engineer with 3+ years of experience delivering secure, production-grade SaaS platforms for banking and government sectors. Specialized in full-stack development (React, Node.js, NestJS) with strong DevOps capability (Azure, Docker, CI/CD). Master's-qualified from University of Otago.",
@@ -96,6 +96,9 @@ export const skillCategories: SkillCategory[] = [
     label: "DevOps & Cloud",
     skills: [
       { name: "Docker", iconKey: "SiDocker", brandColor: "#2496ED" },
+      { name: "Podman", iconKey: "SiPodman", brandColor: "#892CA0" },
+      { name: "Ansible", iconKey: "SiAnsible", brandColor: "#EE0000" },
+      { name: "Elastic", iconKey: "SiElastic", brandColor: "#005571" },
       { name: "Azure", iconKey: "VscAzure", brandColor: "#0078D4" },
       { name: "GitHub Actions", iconKey: "SiGithubactions", brandColor: "#2088FF" },
       { name: "Nginx", iconKey: "SiNginx", brandColor: "#009639" },

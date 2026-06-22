@@ -15,7 +15,7 @@ const ibmPlexMono = IBM_Plex_Mono({
 export const metadata: Metadata = {
   title: "Ping's Studio",
   description:
-    "Full-Stack Developer based in Christchurch, NZ. 3+ years delivering secure SaaS platforms for banking and government sectors. Specialized in React, Node.js, NestJS, and Azure.",
+    "Full-Stack Developer based in Wellington, NZ. 3+ years delivering secure SaaS platforms for banking and government sectors. Specialized in React, Node.js, NestJS, and Azure.",
   keywords: [
     "Full-Stack Developer",
     "Software Engineer",
@@ -23,21 +23,21 @@ export const metadata: Metadata = {
     "Next.js",
     "NestJS",
     "TypeScript",
-    "Christchurch",
+    "Wellington",
     "New Zealand",
   ],
   authors: [{ name: "Sahanon Phisetpaksit (Ping)" }],
   openGraph: {
     title: "Ping's Studio — Software Engineer",
     description:
-      "Full-Stack Developer based in Christchurch, NZ. 3+ years delivering secure SaaS platforms for banking and government sectors.",
+      "Full-Stack Developer based in Wellington, NZ. 3+ years delivering secure SaaS platforms for banking and government sectors.",
     type: "website",
     locale: "en_NZ",
   },
   twitter: {
     card: "summary_large_image",
     title: "Ping's Studio — Software Engineer",
-    description: "Full-Stack Developer based in Christchurch, NZ.",
+    description: "Full-Stack Developer based in Wellington, NZ.",
   },
 };
 
